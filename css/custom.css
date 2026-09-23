@@ -1,9 +1,10 @@
 /* Custom styles. Original form-submit handler removed (RSVP form no longer present). */
 
-/* ── Fix 1: "TWO SOULS / ONE JOURNEY / A LIFETIME OF LOVE & FOREVER" was 41px ImperialScript, 560px wide → overflowed on mobile (see screenshot). Use a normal readable font at a smaller size. ── */
+/* ── Fix 1: "TWO SOULS / ONE JOURNEY / A LIFETIME OF LOVE & FOREVER" was 41px ImperialScript, 560px wide → overflowed on mobile (see screenshot). Use a normal readable font, centered, moved up. ── */
 #rec2487446043 .tn-elem[data-elem-id="1780748008617000003"] {
   width: 560px;
   max-width: 90vw;
+  top: 870px !important;
 }
 #rec2487446043 .tn-elem[data-elem-id="1780748008617000003"] .tn-atom {
   font-family: 'Cinzel', Georgia, serif !important;
@@ -12,8 +13,23 @@
   font-weight: 400 !important;
   letter-spacing: 0.12em !important;
   text-transform: uppercase;
+  text-align: center !important;
   white-space: normal !important;
   word-break: break-word;
+  overflow-wrap: anywhere;
+}
+/* Paragraph below heading: normal readable font, better spacing, moved up so torn edge never clips it */
+#rec2487446043 .tn-elem[data-elem-id="1780748008617000005"] {
+  top: 1000px !important;
+}
+#rec2487446043 .tn-elem[data-elem-id="1780748008617000005"] .tn-atom {
+  font-family: 'Ovo', Georgia, serif !important;
+  font-size: 18px !important;
+  line-height: 1.65 !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em !important;
+  text-align: center !important;
+  white-space: normal !important;
   overflow-wrap: anywhere;
 }
 @media screen and (max-width: 959px) {
@@ -22,14 +38,35 @@
   }
 }
 @media screen and (max-width: 479px) {
+  /* Center heading on mobile: Tilda leaves it at left:-120px (off-screen), so force true centering */
   #rec2487446043 .tn-elem[data-elem-id="1780748008617000003"] {
+    top: 850px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
     width: 300px !important;
     max-width: calc(100vw - 32px) !important;
+    margin: 0 !important;
+    text-align: center !important;
   }
   #rec2487446043 .tn-elem[data-elem-id="1780748008617000003"] .tn-atom {
     font-size: 18px !important;
-    line-height: 1.6 !important;
+    line-height: 1.7 !important;
     letter-spacing: 0.1em !important;
+  }
+  /* Paragraph: centered, narrower, airy line-height so each line reads cleanly */
+  #rec2487446043 .tn-elem[data-elem-id="1780748008617000005"] {
+    top: 975px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 290px !important;
+    max-width: calc(100vw - 48px) !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+  #rec2487446043 .tn-elem[data-elem-id="1780748008617000005"] .tn-atom {
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    padding: 0 4px;
   }
 }
 
@@ -133,4 +170,28 @@
   line-height: 1.5;
   margin-top: 12px;
   opacity: 0.8;
+}
+
+/* ── Schedule: keep only 17 Nov events (Haldi 11AM, Mama Sawagat 5PM, Mehendi 8PM). Hide Baraat (18 Nov) + Belding (19 Nov) rows, their dots, shorten timeline, tighten artboard. ── */
+#rec2487446103 .tn-elem[data-elem-id="1778517684813000001"],
+#rec2487446103 .tn-elem[data-elem-id="1778517684813000002"],
+#rec2487446103 .tn-elem[data-elem-id="1772803619332000008"],
+#rec2487446103 .tn-elem[data-elem-id="1772803619332000009"],
+#rec2487446103 .tn-elem[data-elem-id="1778517704423000003"],
+#rec2487446103 .tn-elem[data-elem-id="1772803619332000010"] {
+  display: none !important;
+}
+/* Shorten vertical timeline (was 150→665 for 5 events; now ends after Mehendi ~410) */
+#rec2487446103 .tn-elem[data-elem-id="1772803124037"] {
+  height: 250px !important;
+  overflow: hidden !important;
+}
+#rec2487446103 .tn-elem[data-elem-id="1772803124037"] .tn-atom__vector svg {
+  height: 250px !important;
+}
+/* Remove empty gap left by deleted rows */
+#rec2487446103 .t396__artboard,
+#rec2487446103 .t396__filter,
+#rec2487446103 .t396__carrier {
+  height: 560px !important;
 }
