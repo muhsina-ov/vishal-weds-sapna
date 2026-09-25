@@ -172,26 +172,19 @@
   opacity: 0.8;
 }
 
-/* ── Schedule: keep only 17 Nov events (Haldi 11AM, Mama Sawagat 5PM, Mehendi 8PM). Hide Baraat (18 Nov) + Belding (19 Nov) rows, their dots, shorten timeline, tighten artboard. ── */
-#rec2487446103 .tn-elem[data-elem-id="1778517684813000001"],
-#rec2487446103 .tn-elem[data-elem-id="1778517684813000002"],
-#rec2487446103 .tn-elem[data-elem-id="1772803619332000008"],
-#rec2487446103 .tn-elem[data-elem-id="1772803619332000009"],
-#rec2487446103 .tn-elem[data-elem-id="1778517704423000003"],
-#rec2487446103 .tn-elem[data-elem-id="1772803619332000010"] {
-  display: none !important;
+/* ── Schedule: Show all 5 events (Haldi, Mama Sawagat, Mehendi, Bharat, Belding) ── */
+#rec2487446103 .tn-elem[data-elem-id="1778517684813000001"] {
+  width: 95px !important;
 }
-/* Shorten vertical timeline (was 150→665 for 5 events; now ends after Mehendi ~410) */
-#rec2487446103 .tn-elem[data-elem-id="1772803124037"] {
-  height: 250px !important;
-  overflow: hidden !important;
-}
-#rec2487446103 .tn-elem[data-elem-id="1772803124037"] .tn-atom__vector svg {
-  height: 250px !important;
-}
-/* Remove empty gap left by deleted rows */
 #rec2487446103 .t396__artboard,
 #rec2487446103 .t396__filter,
 #rec2487446103 .t396__carrier {
-  height: 560px !important;
+  height: 590px !important;
+}
+@media screen and (max-width: 479px) {
+  #rec2487446103 .t396__artboard,
+  #rec2487446103 .t396__filter,
+  #rec2487446103 .t396__carrier {
+    height: 570px !important;
+  }
 }
