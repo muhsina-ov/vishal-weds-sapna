@@ -172,19 +172,192 @@
   opacity: 0.8;
 }
 
-/* ── Schedule: Show all 5 events (Haldi, Mama Sawagat, Mehendi, Bharat, Belding) ── */
-#rec2487446103 .tn-elem[data-elem-id="1778517684813000001"] {
-  width: 95px !important;
-}
+/* ── Schedule: Aligned layout, compact elegant font, no overlap ── */
 #rec2487446103 .t396__artboard,
 #rec2487446103 .t396__filter,
 #rec2487446103 .t396__carrier {
   height: 590px !important;
 }
+
+/* Time elements (Left column) */
+#rec2487446103 .tn-elem[data-elem-id="1772803062504"],
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000003"],
+#rec2487446103 .tn-elem[data-elem-id="1782315588274000002"],
+#rec2487446103 .tn-elem[data-elem-id="1778517684813000002"],
+#rec2487446103 .tn-elem[data-elem-id="1772803619332000009"] {
+  width: 140px !important;
+  text-align: right !important;
+}
+#rec2487446103 .tn-elem[data-elem-id="1772803062504"] .tn-atom,
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000003"] .tn-atom,
+#rec2487446103 .tn-elem[data-elem-id="1782315588274000002"] .tn-atom,
+#rec2487446103 .tn-elem[data-elem-id="1778517684813000002"] .tn-atom,
+#rec2487446103 .tn-elem[data-elem-id="1772803619332000009"] .tn-atom {
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+  white-space: nowrap !important;
+  text-align: right !important;
+}
+
+/* Program elements (Right column) */
+#rec2487446103 .tn-elem[data-elem-id="1763405268776"],
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000002"],
+#rec2487446103 .tn-elem[data-elem-id="1782315605037000003"],
+#rec2487446103 .tn-elem[data-elem-id="1778517684813000001"],
+#rec2487446103 .tn-elem[data-elem-id="1772803619332000008"] {
+  width: 160px !important;
+  text-align: left !important;
+}
+#rec2487446103 .tn-elem[data-elem-id="1763405268776"] .tn-atom,
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000002"] .tn-atom,
+#rec2487446103 .tn-elem[data-elem-id="1782315605037000003"] .tn-atom,
+#rec2487446103 .tn-elem[data-elem-id="1778517684813000001"] .tn-atom,
+#rec2487446103 .tn-elem[data-elem-id="1772803619332000008"] .tn-atom {
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+  font-weight: 400 !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+}
+
+/* Row 1: Haldi (11 AM) */
+#rec2487446103 .tn-elem[data-elem-id="1772803062504"],
+#rec2487446103 .tn-elem[data-elem-id="1763405268776"] {
+  top: 154px !important;
+}
+/* Row 2: Mama Sawagat (5 PM) */
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000003"],
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000002"] {
+  top: 236px !important;
+}
+/* Row 3: Mehendi (8 PM) */
+#rec2487446103 .tn-elem[data-elem-id="1782315588274000002"],
+#rec2487446103 .tn-elem[data-elem-id="1782315605037000003"] {
+  top: 313px !important;
+}
+/* Row 4: Bharat (2 PM) */
+#rec2487446103 .tn-elem[data-elem-id="1778517684813000002"],
+#rec2487446103 .tn-elem[data-elem-id="1778517684813000001"] {
+  top: 390px !important;
+}
+/* Row 5: Belding (11 AM) */
+#rec2487446103 .tn-elem[data-elem-id="1772803619332000009"],
+#rec2487446103 .tn-elem[data-elem-id="1772803619332000008"] {
+  top: 468px !important;
+}
+
+/* Desktop 1200+ horizontal positioning */
+#rec2487446103 .tn-elem[data-elem-id="1772803062504"],
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000003"],
+#rec2487446103 .tn-elem[data-elem-id="1782315588274000002"],
+#rec2487446103 .tn-elem[data-elem-id="1778517684813000002"],
+#rec2487446103 .tn-elem[data-elem-id="1772803619332000009"] {
+  left: calc(50% - 600px + 436px) !important;
+}
+#rec2487446103 .tn-elem[data-elem-id="1763405268776"],
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000002"],
+#rec2487446103 .tn-elem[data-elem-id="1782315605037000003"],
+#rec2487446103 .tn-elem[data-elem-id="1778517684813000001"],
+#rec2487446103 .tn-elem[data-elem-id="1772803619332000008"] {
+  left: calc(50% - 600px + 624px) !important;
+}
+
+/* Breakpoint: 960 - 1199 */
+@media screen and (max-width: 1199px) {
+  #rec2487446103 .tn-elem[data-elem-id="1772803062504"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803288793000003"],
+  #rec2487446103 .tn-elem[data-elem-id="1782315588274000002"],
+  #rec2487446103 .tn-elem[data-elem-id="1778517684813000002"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803619332000009"] {
+    left: calc(50% - 480px + 316px) !important;
+    width: 140px !important;
+  }
+  #rec2487446103 .tn-elem[data-elem-id="1763405268776"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803288793000002"],
+  #rec2487446103 .tn-elem[data-elem-id="1782315605037000003"],
+  #rec2487446103 .tn-elem[data-elem-id="1778517684813000001"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803619332000008"] {
+    left: calc(50% - 480px + 504px) !important;
+    width: 160px !important;
+  }
+}
+
+/* Breakpoint: 640 - 959 */
+@media screen and (max-width: 959px) {
+  #rec2487446103 .tn-elem[data-elem-id="1772803062504"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803288793000003"],
+  #rec2487446103 .tn-elem[data-elem-id="1782315588274000002"],
+  #rec2487446103 .tn-elem[data-elem-id="1778517684813000002"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803619332000009"] {
+    left: calc(50% - 320px + 156px) !important;
+    width: 140px !important;
+  }
+  #rec2487446103 .tn-elem[data-elem-id="1763405268776"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803288793000002"],
+  #rec2487446103 .tn-elem[data-elem-id="1782315605037000003"],
+  #rec2487446103 .tn-elem[data-elem-id="1778517684813000001"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803619332000008"] {
+    left: calc(50% - 320px + 344px) !important;
+    width: 160px !important;
+  }
+}
+
+/* Breakpoint: 480 - 639 */
+@media screen and (max-width: 639px) {
+  #rec2487446103 .tn-elem[data-elem-id="1772803062504"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803288793000003"],
+  #rec2487446103 .tn-elem[data-elem-id="1782315588274000002"],
+  #rec2487446103 .tn-elem[data-elem-id="1778517684813000002"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803619332000009"] {
+    left: calc(50% - 240px + 86px) !important;
+    width: 130px !important;
+  }
+  #rec2487446103 .tn-elem[data-elem-id="1763405268776"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803288793000002"],
+  #rec2487446103 .tn-elem[data-elem-id="1782315605037000003"],
+  #rec2487446103 .tn-elem[data-elem-id="1778517684813000001"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803619332000008"] {
+    left: calc(50% - 240px + 264px) !important;
+    width: 150px !important;
+  }
+}
+
+/* Breakpoint: Mobile (< 480px) */
 @media screen and (max-width: 479px) {
   #rec2487446103 .t396__artboard,
   #rec2487446103 .t396__filter,
   #rec2487446103 .t396__carrier {
     height: 570px !important;
+  }
+  #rec2487446103 .tn-elem[data-elem-id="1772803062504"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803288793000003"],
+  #rec2487446103 .tn-elem[data-elem-id="1782315588274000002"],
+  #rec2487446103 .tn-elem[data-elem-id="1778517684813000002"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803619332000009"] {
+    left: calc(50% - 160px + 10px) !important;
+    width: 130px !important;
+  }
+  #rec2487446103 .tn-elem[data-elem-id="1772803062504"] .tn-atom,
+  #rec2487446103 .tn-elem[data-elem-id="1772803288793000003"] .tn-atom,
+  #rec2487446103 .tn-elem[data-elem-id="1782315588274000002"] .tn-atom,
+  #rec2487446103 .tn-elem[data-elem-id="1778517684813000002"] .tn-atom,
+  #rec2487446103 .tn-elem[data-elem-id="1772803619332000009"] .tn-atom {
+    font-size: 15px !important;
+  }
+  #rec2487446103 .tn-elem[data-elem-id="1763405268776"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803288793000002"],
+  #rec2487446103 .tn-elem[data-elem-id="1782315605037000003"],
+  #rec2487446103 .tn-elem[data-elem-id="1778517684813000001"],
+  #rec2487446103 .tn-elem[data-elem-id="1772803619332000008"] {
+    left: calc(50% - 160px + 180px) !important;
+    width: 135px !important;
+  }
+  #rec2487446103 .tn-elem[data-elem-id="1763405268776"] .tn-atom,
+  #rec2487446103 .tn-elem[data-elem-id="1772803288793000002"] .tn-atom,
+  #rec2487446103 .tn-elem[data-elem-id="1782315605037000003"] .tn-atom,
+  #rec2487446103 .tn-elem[data-elem-id="1778517684813000001"] .tn-atom,
+  #rec2487446103 .tn-elem[data-elem-id="1772803619332000008"] .tn-atom {
+    font-size: 15px !important;
   }
 }
